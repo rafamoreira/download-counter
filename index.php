@@ -1,8 +1,5 @@
 <?php
 
-#base_url = http://download.asradiostation.com.br/overdrive/01overdrive.mp3
-# composite_url = http://download.asradiostation.com.br/?file=http://download.asradiostation.com.br/overdrive/01overdrive.mp3&ref=1
-
 $file = filter_input( INPUT_GET, 'file', FILTER_SANITIZE_URL );
 if(empty($file)) {
   http_response_code(404);
